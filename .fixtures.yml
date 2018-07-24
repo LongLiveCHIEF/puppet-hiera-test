@@ -1,5 +1,8 @@
 fixtures:
   repositories:
+    apt:
+      ref: '2.4.0'
+      repo: 'https://github.com/puppetlabs/puppetlabs-apt'
     archive:
       ref: 'v1.3.0'
       repo: 'https://github.com/voxpupuli/puppet-archive'
