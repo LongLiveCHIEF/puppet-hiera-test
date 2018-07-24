@@ -1,0 +1,26 @@
+fixtures:
+  repositories:
+    archive:
+      ref: 'v1.3.0'
+      repo: 'https://github.com/voxpupuli/puppet-archive'
+    dirtree:
+      ref: 'v0.3.0'
+      repo: 'https://github.com/puppetlabs/pltraining-dirtree'
+    inifile:
+      ref: '1.6.0'
+      repo: 'https://github.com/puppetlabs/puppetlabs-inifile'
+    java:
+      ref: '1.6.0'
+      repo: 'https://github.com/puppetlabs/puppetlabs-java'
+    java_ks:
+      ref: '1.6.0'
+      repo: 'https://github.com/puppetlabs/puppetlabs-java_ks'
+    rundeck:
+      branch: 'v5.3.0'
+      repo: 'https://github.com/voxpupuli/puppet-rundeck'
+    stdlib:
+      ref: '4.25.1'
+      repo: 'https://github.com/puppetlabs/puppetlabs-stdlib'
+    vcsrepo:
+      ref: '1.5.0'
+      repo: 'https://github.com/puppetlabs/puppetlabs-vcsrepo'

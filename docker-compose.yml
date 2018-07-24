@@ -1,0 +1,9 @@
+services:
+  puppet_hiera_test:
+    command: /bin/bash bin/tests
+    image: ruby:2.4.4
+    volumes:
+      - .:/puppet
+    working_dir: /puppet
+
+version: '3'
