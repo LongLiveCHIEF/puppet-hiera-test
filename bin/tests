@@ -1,4 +1,4 @@
 #!/bin/bash -e
-bundle install --deployment --without development
+bundle install --deployment
 
 bundle exec rake spec --trace
