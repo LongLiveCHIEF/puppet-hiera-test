@@ -1,5 +1,5 @@
-class puppet_hiera_test::rundeck(
-  String $version = present,
+class mystuff::rd(
+  String $version,
 ) {
   class { 'java':
     distribution => 'jre',

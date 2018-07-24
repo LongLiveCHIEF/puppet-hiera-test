@@ -1,7 +1,7 @@
 require "spec_helper"
 
-describe "puppet_hiera_test::rundeck" do
-  hiera = Hiera.new( config: 'spec/fixtures/hiera/hiera.yaml' )
+describe "mystuff::rd" do
+  hiera = Hiera.new( config: 'hiera.yaml' )
 
   test_on = {
     :supported_os => [
@@ -16,7 +16,8 @@ describe "puppet_hiera_test::rundeck" do
     context "on #{os}" do
       let(:facts) { facts }
 
-      version = hiera.lookup("puppet_hiera_test::rundeck::version", nil, facts)
+      # I look at this as setting the "expected" value to ensure my tests pass
+      version = hiera.lookup("mystuff::rd::version", nil, facts)
 
       it { is_expected.to compile.with_all_deps }
       it { should contain_class("java").with_distribution("jre") }

@@ -1,6 +1,6 @@
 defaults:
   data_hash: yaml_data
-  datadir: .
+  datadir: data
 
 hierarchy:
   - name: "Kernel"
