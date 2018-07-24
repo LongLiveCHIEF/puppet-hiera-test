@@ -1,12 +1,12 @@
+version: 5
+
 defaults:
   data_hash: yaml_data
   datadir: data
 
 hierarchy:
   - name: "Kernel"
-    path: "kernel/%{kernel}.yaml"
+    path: "kernel/%{facts.kernel}.yaml"
 
   - name: "Common"
     path: "common.yaml"
-
-version: 5

@@ -8,6 +8,7 @@ group :test do
   gem 'rspec-puppet'
   gem 'rspec-puppet-facts', :require => false
   gem 'hiera'
+  gem 'rspec-puppet-utils'
 end
 
 group :development, :test do

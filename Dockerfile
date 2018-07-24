@@ -1,0 +1,17 @@
+FROM ruby:2.5-alpine
+
+WORKDIR /opt/puppet
+
+ENV PUPPET_VERSION "~> 5"
+ENV PARALLEL_TEST_PROCESSORS=4
+
+RUN apk add --no-cache git bash alpine-sdk
+
+# Cache gems
+COPY Gemfile .
+RUN bundle install --without system_tests development release --path=${BUNDLE_PATH:-vendor/bundle}
+
+COPY . .
+
+RUN bundle install
+RUN bundle exec rake spec
